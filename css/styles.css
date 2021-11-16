@@ -1,0 +1,224 @@
+body {
+  color: #212121;
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+}
+
+/* Цвет основного текста #212121 */
+/* Цвет вторичного текста #757575; */
+/* Белый цвет #FFFFFF; */
+/* Акцент #2196F3 */
+/* Цвет адреса rgba(255, 255, 255, 0.6) */
+/* Цвет фона хедера #FFFFFF */
+/* Цвет фона героя #2F303A */
+/* Цвет секции \Чем мы занимаемся\ #E5E5E5  */
+/* Цвет секции \Наша команда\ #F5F4FA */
+
+.page-header {
+  background-color: #ffffff;
+}
+
+.logo {
+  color: #000000;
+
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-style {
+  color: #2196f3;
+}
+
+/* Навигация сайта */
+.site-nav .link {
+  color: #212121;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+
+.contacts {
+  color: #757575;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: #2196f3;
+}
+
+/* Герой */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #2196f3;
+  color: #ffffff;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.link-list {
+  text-decoration: none;
+}
+
+.list-button {
+  color: #212121;
+  background-color: #f5f4fa;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: 0;
+}
+
+.list-button:hover,
+.list-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.list .list-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.list .section-paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.list-person {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.section-paragraph,
+.team-position,
+.list-info {
+  color: #757575;
+}
+
+.list-project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.list-info {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.section {
+  background-color: #ffffff;
+}
+
+.team-section {
+  background-color: #ffffff;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-link {
+  color: #ffffff;
+
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-text {
+  color: #ffffff;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contacts-style {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.contacts-style:hover,
+.contacts-style:focus {
+  color: #2196f3;
+}
