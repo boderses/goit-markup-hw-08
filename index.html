@@ -13,16 +13,16 @@
 <!-- Шапка сайта --> 
 
     <header class="page-header">
-        <nav class="container">
+        <nav class="container main-nav">
             <a href="/" class="logo"><span class="logo-style">Web</span>Studio</a>
             <ul class="site-nav list">
-                <li><a href="" class="link">Студия</a></li>
-                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="" class="link">Контакты</a></li>
+                <li class="item"><a href="" class="link">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
-            <ul class="cotacts list">
-                <a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
-                <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
+            <ul class="contacts list">
+                <li class="item"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
             </ul>
 
         </nav>
@@ -32,32 +32,32 @@
 
     <main>
     <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
         <button type="button" class="button">Заказать услугу</button>
     </section>
 
 <!-- Описание преимуществ компании-->
 
-    <section class="section">
-        <div class="container">
+    <section class="section container">
+        <div class="advantage">
             <h2 class="visual-hidden">Преимущества выбора</h2>
-            <ul class="list">
-                <li>
+            <ul class="feature-list list">
+                <li class="item">
                     <h3 class="list-title">Внимание к деталям</h3>
                     <p class="section-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="list-title">Пунктуальность</h3>
                     <p class="section-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                     </p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="list-title">Планирование</h3>
                     <p class="section-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.
                     </p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="list-title">Современные технологии</h3>
                     <p class="section-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -68,10 +68,10 @@
     <section class="section container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <div class="item-container">
-            <ul class="list">
-                <li><img src="./images/coding.jpg" alt="Верстка сайтов" width="370"></li>
-                <li><img src="./images/tablet.jpg" alt="Версия для планшета" width="370"></li>
-                <li><img src="./images/phone.jpg" alt="Версия для телефона" width="370"></li>
+            <ul class="images list">
+                <li class="item-type"><img class="image-type" src="./images/coding.jpg" alt="Верстка сайтов" width="370"></li>
+                <li class="item-type"><img class="image-type" src="./images/tablet.jpg" alt="Версия для планшета" width="370"></li>
+                <li class="item-type"><img class="image-type" src="./images/phone.jpg" alt="Версия для телефона" width="370"></li>
             </ul>
         </div>
     </section>
@@ -79,23 +79,23 @@
     <section class="team-section container">
         <h2 class="section-title">Наша команда</h2>
         <div class="person-container">
-            <ul class="list">
-                <li>
+            <ul class="members list">
+                <li class="members-item">
                     <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270">
                     <h3 class="list-person">Игорь Демьяненко</h3>
                     <p class="team-position">Product Designer</p>
                 </li>
-                <li>
+                <li class="members-item">
                     <img src="./images/olga.jpg" alt="Ольга Репина" width="270">
                     <h3 class="list-person">Ольга Репина</h3>
                     <p class="team-position">Frontend Developer</p>
                 </li>
-                <li>
+                <li class="members-item">
                     <img src="./images/nicolaj.jpg" alt="Николай Тарасов" width="270">
                     <h3 class="list-person">Николай Тарасов</h3>
                     <p class="team-position">Marketing</p>
                 </li>
-                <li>
+                <li class="members-item">
                     <img src="./images/mihail.jpg" alt="Михаил Ермаков" width="270">
                     <h3 class="list-person">Михаил Ермаков</h3>
                     <p class="team-position">UI Designer</p>
