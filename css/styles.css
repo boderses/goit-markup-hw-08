@@ -146,7 +146,8 @@ h6 {
 }
 
 .hero-title {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 30px;
 
   color: #ffffff;
 
@@ -253,11 +254,16 @@ h6 {
 }
 
 .section {
+
   padding-top: 94px;
-  padding-bottom: 94px;
+  
   text-align: center;
 }
 
+.cards {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .visual-hidden {
   position: absolute;
   width: 1px;
@@ -275,7 +281,8 @@ h6 {
 .advantage {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+
+  padding-top: 94px;
 }
 
 .feature-list {
@@ -356,7 +363,8 @@ h6 {
 
 .list-person {
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -423,7 +431,9 @@ h6 {
 
 .footer-link {
   display: inline-block;
-  padding-bottom: 20px;
+  
+  margin-top: 0;
+  margin-bottom: 20px;
 
   color: #ffffff;
 
@@ -436,7 +446,7 @@ h6 {
 }
 
 .footer-text {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 
   color: #ffffff;
 
@@ -456,7 +466,7 @@ h6 {
 }
 
 .contacts-style:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .contacts-style:hover,
