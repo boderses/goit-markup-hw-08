@@ -37,15 +37,8 @@ h6 {
   margin: 0 auto;
 }
 
-.page-header .container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
 .page-header {
-  
   border-bottom: 1px solid #ECECEC;
- 
   background-color: #ffffff;
 }
 
@@ -114,7 +107,6 @@ h6 {
 }
 
 .contact {
-
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -138,25 +130,21 @@ h6 {
 /* Герой */
 
 .hero {
-
-  background-color: #2F303A;
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-
   background-image: linear-gradient(
    rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)
   ), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
 }
 
 .hero-title {
@@ -170,7 +158,6 @@ h6 {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
 }
 
 .button {
@@ -191,12 +178,10 @@ h6 {
   letter-spacing: 0.06em;
   cursor: pointer;
   text-decoration: none;
-
 }
 
 
 .project {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -210,7 +195,6 @@ h6 {
 }
 
 .list-button {
-
   padding: 6px 26px;
   border: 0;
   border-radius: 4px;
@@ -237,9 +221,6 @@ h6 {
   background-color: #2196f3;
 }
 
-
-
-
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -247,7 +228,6 @@ h6 {
 }
 
 .link-container {
-
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
@@ -268,16 +248,16 @@ h6 {
 }
 
 .section {
-
-  padding-top: 94px;
-  
-  text-align: center;
-}
-
-.cards {
+  background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.first-section {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
 .visual-hidden {
   position: absolute;
   width: 1px;
@@ -292,11 +272,10 @@ h6 {
   overflow: hidden;
 }
 
+
 .advantage {
   display: flex;
   flex-wrap: wrap;
-
-  padding-top: 94px;
 }
 
 .feature-list {
@@ -316,8 +295,8 @@ h6 {
   margin-bottom: 0px;
 }
 .list .list-title {
-  margin: 0;
-  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
@@ -334,19 +313,17 @@ h6 {
   margin-top: 0;
   margin-bottom: 50px;
 
-
+  text-align: center;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
 }
-
 
 .images {
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .item-type:not(:last-child) {
@@ -359,13 +336,6 @@ h6 {
   height: auto;
 }
 
-.team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
-
-}
-
 .person-container {
   display: inline-block;
 }
@@ -376,7 +346,6 @@ h6 {
 }
 
 .list-person {
-
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -401,7 +370,6 @@ h6 {
 }
 
 .list-project {
-
   margin: 0;
   
   font-weight: 700;
@@ -411,19 +379,16 @@ h6 {
 }
 
 .list-info {
-
   margin: 0;
   
   font-size: 16px;
   line-height: 1.9;
 }
 
-.section {
-  background-color: #ffffff;
-}
-
 .team-section {
-  background-color: #ffffff;
+  background-color: #F5F4FA;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .members {
@@ -440,7 +405,6 @@ h6 {
 
   padding-top: 60px;
   padding-bottom: 60px;
-
 }
 
 .footer-link {
