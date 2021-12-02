@@ -90,10 +90,27 @@ img {display: block;}
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
+}
+
+.item {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2196f3;
+  border-radius: 2px;
+
 }
 
 .contacts {
@@ -119,6 +136,7 @@ img {display: block;}
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover,
@@ -201,15 +219,55 @@ img {display: block;}
 .link-list {
   display: block;
   text-decoration: none;
+
 }
 
 
 .link-list:hover {
-  /* background: #FFFFFF;
-  border: 1px solid #EEEEEE;
-  box-sizing: border-box; */
+
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-thumb::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%; 
+}
+
+.link-list:hover .product-thumb::before {
+  
+}
+
+.product-description {
+  position: absolute;
+  padding: 63px 24px;
+  bottom: 0;
+  left: 0; 
+  margin: 0;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+ 
+  
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-list:hover .product-description {
+  transform: translateY(0%);
+}
+
 
 .list-button {
   padding: 6px 26px;
@@ -226,6 +284,7 @@ img {display: block;}
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project .item:not(:last-child) {
@@ -248,7 +307,7 @@ img {display: block;}
 .link-container {
   margin-right: 30px;
   margin-bottom: 30px;
-  /* width: 370px; */
+
 }
 
 .link-container:nth-child(3n) {
@@ -353,6 +412,10 @@ img {display: block;}
   justify-content: center;
 }
 
+.item-type {
+  position: relative;
+}
+
 .item-type:not(:last-child) {
   margin-right: 30px;
 }
@@ -361,6 +424,32 @@ img {display: block;}
   display: inline-block;
   max-width: 100%;
   height: auto;
+}
+
+.image-type-description {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  display: flex;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  height: 70px;
+
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  opacity: 1;
+  
 }
 
 .person-container {
@@ -454,6 +543,7 @@ img {display: block;}
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -474,6 +564,7 @@ img {display: block;}
   height: 44px;
   width: 44px;
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client {
@@ -517,6 +608,7 @@ img {display: block;}
   fill: #afb1b8;
   width: 106px;
   height: 60px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -560,6 +652,7 @@ img {display: block;}
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-style:not(:last-child) {
@@ -622,6 +715,7 @@ img {display: block;}
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-icons-link:hover,
@@ -634,4 +728,54 @@ img {display: block;}
   width: 20px;
   height: 20px;
   fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; 
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  
+  
+}
+
+.modal-icon { 
+  fill: #000000;
+  width: 11px;
+  height: 11px;
 }
