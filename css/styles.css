@@ -854,7 +854,142 @@ img {
 .form-field {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	margin: 0;
-	margin-bottom: 10px;
 	padding: 0;
+}
+
+.form-field:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.form-label-text {
+	margin-bottom: 4px;
+	font-size: 12px;
+	line-height: 1.2;
+	letter-spacing: 0.01em;
+
+	color: #757575;
+}
+
+.form-field-colume {
+	padding-left: 42px;
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	outline: none;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field-colume:focus {
+	border: 1px solid #2196f3;
+}
+
+.form-field-colume:focus + .form-field-icon {
+	fill: #2196f3;
+}
+
+.form-field-comment-colume {
+	height: 120px;
+	width: inherit;
+	padding: 12px 16px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	resize: none;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field-comment-colume:focus {
+	border: 1px solid #2196f3;
+	outline: none;
+}
+
+.form-field-comment-colume::placeholder {
+	font-size: 12px;
+	line-height: 1.2;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field-icon {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	width: 18px;
+	height: 18px;
+	fill: #212121;
+}
+
+.form-policy {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.form-policy-label {
+	position: relative;
+	font-size: 14px;
+	line-height: 1.7px;
+	color: #757575;
+	padding-left: 22px;
+}
+
+.form-polycy-checkbox {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.form-polycy-checkbox:checked + .form-policy-icon {
+	background-color: #2196f3;
+	border: transparent;
+}
+
+.form-policy-icon {
+	display: inline-block;
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 16px;
+	height: 15px;
+	background-color: #ffffff;
+	fill: #ffffff;
+	border: 2px solid #212121;
+	border-radius: 2px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-policy-link {
+	text-decoration-skip-ink: none;
+}
+
+.form-submit {
+	display: flex;
+	justify-content: center;
+}
+
+.form-submit-button {
+	min-width: 200px;
+	padding: 10px 55px;
+	color: #ffffff;
+	background-color: #2196f3;
+	border: 1px solid transparent;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+
+	font-family: Roboto, sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	text-decoration: none;
 }

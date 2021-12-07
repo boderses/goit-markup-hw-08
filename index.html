@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студия</title>
+    <title>WebStudio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -421,34 +421,53 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="form">
-          <ul class="list">
-            <li class="form-field">
-              <label for="name">Имя</label>
-              <input type="text" name="name" id="name"/>              
-            </li>
-            <li class="form-field">
-              <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel"/>              
-            </li>
-            <li class="form-field">
-              <label for="mail">Почта</label>
-              <input type="email" name="mail" id="mail"/>
-            </li>
-            <li class="form-field">
-              <label for="comment">Комментарий</label>
-              <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
-            </li>
-          </ul>
-          <input type="checkbox" name="policy" id="policy"/>
-          <label for="policy">Соглашаюсь с рассылкой и принимаю 
-            <a href="">Условия договора</a>
-          </label>
+          <div class="form-field">
+            <label for="name" class="form-label-text">Имя</label>
+            <input type="text" name="name" id="name" class="form-field-colume"/>
+            <svg class="form-field-icon">
+              <use href="./images/icons.svg#personicon"></use>
+            </svg>
+          </div> 
 
-          <button type="submit">Отправить</button>
+          <div class="form-field">
+            <label for="tel" class="form-label-text">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="form-field-colume"/>
+            <svg class="form-field-icon">
+              <use href="./images/icons.svg#phoneicon"></use>
+            </svg>              
+          </div>
 
+          <div class="form-field">
+            <label for="mail" class="form-label-text">Почта</label>
+            <input type="email" name="mail" id="mail" class="form-field-colume"/>
+            <svg class="form-field-icon">
+              <use href="./images/icons.svg#emailicon"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label-text" for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" placeholder="Введите текст" class="form-field-comment-colume"></textarea>
+          </div>
         </form>
+
+        <div class="form-policy">
+          <label class="form-policy-label" for="policy">Соглашаюсь с рассылкой и принимаю 
+            <input class="form-polycy-checkbox" type="checkbox" name="policy" id="policy"/>
+            <svg class="form-policy-icon">
+              <use href="./images/icons.svg#checkbox"></use>
+            </svg>            
+            <a class="form-policy-link" href="">Условия договора</a>
+          </label>
+        </div>
+
+        <div class="form-submit">
+          <button class="form-submit-button" type="submit">Отправить</button>
+        </div>     
+ 
       </div>
     </div>    
     <script src="./js/modal.js"></script>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Студия</title>
+		<title>WebStudio</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
@@ -266,6 +266,25 @@
 						</li>
 					</ul>
 				</div>
+				<form class="footer-slogan">
+					<label class="footer-slogan-text" for="newsletter-email">Подпишитесь на рассылку</label>
+					<div class="footer-subscription">
+						<input
+							class="footer-slogan-mail"
+							id="newsletter-email"
+							type="email"
+							name="mail"
+							placeholder="E-mail"
+							required
+						/>
+						<button class="footer-slogan-button" type="submit">
+							Подписаться
+							<svg class="footer-subscription-item">
+								<use href="./images/icons.svg#send"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
 			</div>
 		</footer>
 	</body>
