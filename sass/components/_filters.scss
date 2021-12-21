@@ -1,0 +1,10 @@
+.filters__position {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.filters__item:not(:last-child) {
+	margin-right: 8px;
+}

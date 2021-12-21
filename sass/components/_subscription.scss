@@ -1,0 +1,65 @@
+.footer-slogan {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.footer-slogan-text {
+	margin-top: 0;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	color: var(--primary-white-color);
+}
+
+.footer-subscription {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+}
+
+.footer-slogan-mail {
+	width: 358px;
+	height: 50px;
+	padding-left: 16px;
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	color: var(--primary-white-color);
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.6);
+	}
+}
+
+.footer-slogan-button {
+	display: inline-flex;
+	justify-content: center;
+
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
+
+	margin-left: 12px;
+	padding: 10px 28px 10px 29px;
+	min-width: 200px;
+
+	font-family: Roboto, sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-subscription-item {
+	margin-left: 10px;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	fill: var(--primary-white-color);
+}

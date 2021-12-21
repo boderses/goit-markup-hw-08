@@ -1,0 +1,39 @@
+.feat-section {
+	padding-top: 94px;
+	padding-bottom: 0;
+}
+
+.feat-list {
+	display: flex;
+	.feat__item {
+		width: 270px;
+	}
+	.feat__item:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.feat__icons {
+	width: 270px;
+	height: 120px;
+	padding: 25px 100px;
+	margin-bottom: 30px;
+	background-color: var(--light-background);
+	border-radius: 4px;
+}
+
+.feat__text {
+	margin-top: 0;
+	margin-bottom: 0px;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+.feat_subtitle {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.1;
+	text-transform: uppercase;
+}

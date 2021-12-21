@@ -1,0 +1,114 @@
+.examples__link {
+	display: block;
+	text-decoration: none;
+	&:hover {
+		box-shadow: var(--shadow-color);
+	}
+	&:hover .examples__projects {
+		transform: translateY(0%);
+	}
+}
+
+.examples__overlay {
+	position: relative;
+	overflow: hidden;
+	&::before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.examples__projects {
+	position: absolute;
+	padding: 63px 24px;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	width: 370px;
+	height: 294px;
+	overflow: hidden;
+
+	font-size: 18px;
+	line-height: 1.5;
+	color: #ffffff;
+	background-color: var(--accent-color);
+	transform: translateY(100%);
+
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-button {
+	padding: 6px 26px;
+	border: 0;
+	border-radius: 4px;
+
+	color: #212121;
+	background-color: #f5f4fa;
+
+	font-family: Roboto, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover {
+		color: var(--primary-white-color);
+		background-color: var(--accent-color);
+		box-shadow: var(--shadow-color);
+	}
+	&:focus {
+		color: var(--primary-white-color);
+		background-color: var(--accent-color);
+		box-shadow: var(--shadow-color);
+	}
+}
+
+.project .feat__item:not(:last-child) {
+	margin-right: 8px;
+}
+
+.examples {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.examples__item {
+	margin-right: 30px;
+	margin-bottom: 30px;
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+	&:nth-last-child(-n + 3) {
+		margin-bottom: 0;
+	}
+}
+
+.project-info {
+	padding: 20px 24px;
+
+	background-color: var(--primary-white-color);
+	border-left: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
+}
+
+.project-info__title {
+	margin: 0;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.project-info__subtitle {
+	margin: 0;
+
+	font-size: 16px;
+	line-height: 1.9;
+}
