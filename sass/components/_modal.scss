@@ -15,8 +15,11 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 528px;
-		height: 581px;
+		max-width: 450px;
+		padding: 40px;
+		@media screen and (min-width: 1200px) {
+			min-width: 528px;
+		}
 
 		background-color: var(--primary-white-color);
 		box-shadow: var(--shadow-color);
@@ -57,12 +60,23 @@
 	text-align: center;
 }
 
-.form {
-	width: 448px;
-	height: 342px;
-	margin-left: 40px;
-	margin-right: 40px;
+.modal-form {
+	&____position {
+		display: flex;
+		flex-direction: column;
+	}
+	&__wrapper {
+		position: relative;
+		display: block;
+	}
 }
+
+// .form {
+// 	width: 448px;
+// 	height: 342px;
+// 	margin-left: 40px;
+// 	margin-right: 40px;
+// }
 
 .form-field {
 	display: flex;
@@ -85,8 +99,9 @@
 }
 
 .form-field-colume {
-	padding-left: 42px;
+	margin-top: 4px;
 	height: 40px;
+	width: 100%;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	outline: none;
@@ -125,7 +140,11 @@
 	left: 12px;
 	width: 18px;
 	height: 18px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	fill: var(--title-color);
+	.form-field-colume:focus + & {
+		fill: var(--accent-color);
+	}
 }
 
 .form-policy {
@@ -136,13 +155,17 @@
 
 .form-policy-label {
 	position: relative;
+	@media screen and (max-width: 767px) {
+		font-size: 12px;
+		line-height: 1.17;
+	}
 	font-size: 14px;
 	line-height: 1.7px;
 	color: var(--text-color);
 	padding-left: 22px;
 }
 
-.form-polycy-checkbox {
+.form-policy-checkbox {
 	position: absolute;
 	width: 1px;
 	height: 1px;
