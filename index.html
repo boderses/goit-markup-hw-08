@@ -164,27 +164,48 @@
           <h2 class="service__title">Чем мы занимаемся</h2>
           <ul class="service__list list">
             <li class="service__item">
-              <img
-                src="./images/coding.jpg"
-                alt="Верстка сайтов"
-                width="370"
-              />
+              <picture>
+                <source srcset="
+              									                        ./images/products/img-1desktop.webp    1x,
+              									                        ./images/products/img-1desktop@2x.webp 2x
+              									                      " media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="
+              									                        ./images/products/img-1desktop.jpg    1x,
+              									                        ./images/products/img-1desktop@2x.jpg 2x
+              									                      " media="(min-width: 1200px)" />
+              
+                <img src="./images/products/img-1desktop.jpg" alt="Десктопные приложения" />
+              </picture>
               <a class="service__description" href="">Десктопные приложения</a>
             </li>
             <li class="service__item">
-              <img
-                src="./images/tablet.jpg"
-                alt="Версия для планшета"
-                width="370"
-              />
+                <picture>
+                  <source srcset="
+                              									                        ./images/products/img-2desktop.webp    1x,
+                              									                        ./images/products/img-2desktop@2x.webp 2x
+                              									                      " media="(min-width: 1200px)" type="image/webp" />
+                  <source srcset="
+                              									                        ./images/products/img-2desktop.jpg    1x,
+                              									                        ./images/products/img-2desktop@2x.jpg 2x
+                              									                      " media="(min-width: 1200px)" />
+                
+                  <img src="./images/products/img-2desktop.jpg" alt="Мобильные приложения" />
+                </picture>
               <a class="service__description" href="">Мобильные приложения</a>
             </li>
             <li class="service__item">
-              <img
-                src="./images/phone.jpg"
-                alt="Версия для телефона"
-                width="370"
-              />
+            <picture>
+              <source srcset="
+             ./images/products/img-3desktop.webp    1x,
+             ./images/products/img-3desktop@2x.webp 2x
+              " media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="
+              ./images/products/img-3desktop.jpg    1x,
+              ./images/products/img-3desktop@2x.jpg 2x
+              " media="(min-width: 1200px)" />
+            
+              <img src="./images/products/img-3desktop.jpg" alt="Дизайнерские решения" />
+            </picture>
               <a class="service__description" href="">Дизайнерские решения</a>
             </li>
           </ul>         
