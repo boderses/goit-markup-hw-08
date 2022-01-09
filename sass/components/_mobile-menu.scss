@@ -1,8 +1,5 @@
 @media screen and (max-width: 767px) {
 	.mobile-menu {
-		// display: flex;
-		// flex-direction: column;
-		// justify-content: space-between;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -13,6 +10,7 @@
 		opacity: 0;
 		visibility: hidden;
 		pointer-events: none;
+		z-index: 100;
 
 		&__container {
 			position: relative;
