@@ -1,3 +1,10 @@
+.clients-list.section {
+	@media screen and (max-width: 1199px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
 .clients__title {
 	margin-top: 0;
 	margin-bottom: 50px;
@@ -27,7 +34,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 170px;
+	width: 210px;
 	height: 92px;
 	border: 1px solid var(--icon-link_color);
 
@@ -46,6 +53,7 @@
 	}
 	@media screen and (min-width: 1200px) {
 		margin-bottom: unset;
+		width: 170px;
 	}
 }
 
